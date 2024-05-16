@@ -1,0 +1,57 @@
+body{
+    background-color:antiquewhite;
+    font-family: "PT Sans Caption", sans-serif;
+
+}
+h1{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate;
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    
+}
+h1::after{
+    content: '';
+    background-color: #fec260;
+    width: 100%;
+    height: 15%;
+    left: 0;
+    bottom: 40px;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.5s;
+   
+    
+}
+h1:hover::after{
+    height: 30%;
+}
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+
+h2 {
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.upper{
+    border-bottom: dashed 1px grey;
+    border-top: dashed 1px grey;
+
+}
